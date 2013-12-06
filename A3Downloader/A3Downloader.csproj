@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <Content Include="UltimateLauncher.exe" />
     <None Include="Resources\File.png" />
     <None Include="Resources\Background.jpg" />
     <None Include="Resources\Total.png" />

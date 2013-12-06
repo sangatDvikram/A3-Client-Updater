@@ -21,7 +21,7 @@ namespace A3Downloader
     {
 
         #region Initialize Veriables 
-        private string Host = "http://localhost/";
+        private string Host = "http://www.a3ultimate.com/patch/";
         public string Patch = "Patch.ini";
         public string UpdatesPath = Directory.GetCurrentDirectory()+@"\Updates";
         public string[] fileArray;
@@ -32,7 +32,7 @@ namespace A3Downloader
         public Stopwatch sw = new Stopwatch();
         public ArrayList downloadFileList = new ArrayList();
         public ArrayList filelist=new ArrayList();
-        public string ClientCheck = "Data\Version.Check";
+        
         // The stream of data retrieved from the web server
         private Stream strResponse;
         // The stream of data that we write to the harddrive
@@ -393,7 +393,10 @@ namespace A3Downloader
             this.pictureBox2.BackgroundImage = A3Downloader.Properties.Resources.bg1;
             this.pictureBox1.BackgroundImage = A3Downloader.Properties.Resources.bg1;
             this.CloseButton.BackgroundImage = A3Downloader.Properties.Resources.bg1;
-
+            
+           /* var url = "http://acp.a3ultimate.com/fb.html";
+            webBrowser1.Navigate(url + "?refreshToken=" + Guid.NewGuid().ToString());
+            webBrowser1.Visible = false;*/
             //if (File.Exists("unrar.dll"))
             //{
                 //Check that whether it is alredy running or not ? 
@@ -404,7 +407,7 @@ namespace A3Downloader
                 }
                 else
                 {
-                    if (!File.Exists(Directory.GetCurrentDirectory() + @"\"+ClientCheck))
+                    if (!File.Exists(Directory.GetCurrentDirectory() + @"\Data\ulti.mate"))
                     {
                         Patch = "FullPatch.ini";
                     }
@@ -447,6 +450,8 @@ namespace A3Downloader
         {
             Directory.CreateDirectory("Updates");
             Directory.CreateDirectory("Updates/Data");
+            if(!Directory.Exists("Data"))
+            Directory.CreateDirectory("Data");
             this.FullCkeckButton.Enabled = false;
             this.StopButton.Enabled = true;
             this.Start.Enabled = false;
@@ -480,11 +485,13 @@ namespace A3Downloader
         private void CloseButton_Click(object sender, EventArgs e)
         {
             CloseAll();
-            
-            DirectoryInfo directory = new DirectoryInfo("Updates");
-            foreach (System.IO.FileInfo file in directory.GetFiles()) file.Delete();
-            foreach (System.IO.DirectoryInfo subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
-            directory.Delete(true);
+            if (Directory.Exists("Updates"))
+            {
+                DirectoryInfo directory = new DirectoryInfo("Updates");
+                foreach (System.IO.FileInfo file in directory.GetFiles()) file.Delete();
+                foreach (System.IO.DirectoryInfo subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
+                directory.Delete(true);
+            }
             System.Threading.Thread.Sleep(100);
             Environment.Exit(0);
 
@@ -615,5 +622,10 @@ namespace A3Downloader
             Process.Start("http://acp.a3ultimate.com/Register");
         }
         #endregion
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            webBrowser1.Visible = true;
+        }
     }
 }

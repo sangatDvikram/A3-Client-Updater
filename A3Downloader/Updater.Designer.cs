@@ -52,6 +52,7 @@
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.TotalLable = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentProgBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalProgBar)).BeginInit();
@@ -390,6 +391,24 @@
             this.TotalLable.TabIndex = 23;
             this.TotalLable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // webBrowser1
+            // 
+            this.webBrowser1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.webBrowser1.AllowNavigation = false;
+            this.webBrowser1.AllowWebBrowserDrop = false;
+            this.webBrowser1.Location = new System.Drawing.Point(20, 91);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.ScrollBarsEnabled = false;
+            this.webBrowser1.Size = new System.Drawing.Size(759, 250);
+            this.webBrowser1.TabIndex = 24;
+            this.webBrowser1.TabStop = false;
+            this.webBrowser1.Url = new System.Uri("http://acp.a3ultimate.com/fb.html", System.UriKind.Absolute);
+            this.webBrowser1.Visible = false;
+            this.webBrowser1.WebBrowserShortcutsEnabled = false;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            // 
             // Updater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,6 +416,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::A3Downloader.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.TotalLable);
             this.Controls.Add(this.percentLable);
             this.Controls.Add(this.linkLabel8);
@@ -463,6 +483,7 @@
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.Label TotalLable;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
