@@ -32,7 +32,7 @@ namespace A3Downloader
         public Stopwatch sw = new Stopwatch();
         public ArrayList downloadFileList = new ArrayList();
         public ArrayList filelist=new ArrayList();
-        
+        public string ClientCheck = "Data\Version.Check";
         // The stream of data retrieved from the web server
         private Stream strResponse;
         // The stream of data that we write to the harddrive
@@ -404,7 +404,7 @@ namespace A3Downloader
                 }
                 else
                 {
-                    if (!File.Exists(Directory.GetCurrentDirectory() + @"\Data\ulti.mate"))
+                    if (!File.Exists(Directory.GetCurrentDirectory() + @"\"+ClientCheck))
                     {
                         Patch = "FullPatch.ini";
                     }
