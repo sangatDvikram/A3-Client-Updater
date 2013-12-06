@@ -21,7 +21,7 @@ namespace A3Downloader
     {
 
         #region Initialize Veriables 
-        private string Host = "http://www.a3ultimate.com/patch/";
+        private string Host = "http://localhost/";
         public string Patch = "Patch.ini";
         public string UpdatesPath = Directory.GetCurrentDirectory()+@"\Updates";
         public string[] fileArray;
