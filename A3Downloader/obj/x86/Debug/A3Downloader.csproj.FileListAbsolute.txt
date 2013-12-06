@@ -1,0 +1,21 @@
+c:\users\macbook\documents\visual studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.Properties.Resources.resources
+c:\users\macbook\documents\visual studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.Updater.resources
+c:\users\macbook\documents\visual studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.csproj.GenerateResource.Cache
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.csprojResolveAssemblyReference.cache
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.exe.config
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.exe
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.pdb
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\UltimateLauncher.exe
+C:\Users\Macbook\Documents\Visual Studio 2010\Projects\A3Downloader\A3Downloader\obj\x86\Debug\UltimateLauncher.pdb
+C:\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.exe.config
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\UltimateLauncher.exe
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\UltimateLauncher.pdb
+C:\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.exe
+C:\Projects\A3Downloader\A3Downloader\bin\Debug\UltimateLauncher.pdb
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.Properties.Resources.resources
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\A3Downloader.Updater.resources
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Projects\A3Downloader\A3Downloader\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
