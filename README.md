@@ -14,3 +14,6 @@ Clean and Clear A3 Client Updater with no rar no 7z just plain zip function and 
 I have designed this specificaly for A3Ultimate if you want to use it no problem at all just need to change Background UI and you are good to go. 
 
 IF any dought or sugession at all fill free to email me any time.  
+
+<b> Demo Screenshot </b>
+<img src="http://acp.a3ultimate.com/images/Updater.jpg">
